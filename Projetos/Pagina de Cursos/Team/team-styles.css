@@ -1,0 +1,145 @@
+:root {
+    --cor-primaria: #ffffff;
+    --cor-segundaria: #0F2167;
+    --cor-terciaria: #3559E0;
+    --cor-quaternaria: #FFECD6;
+}
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+header {
+    background-color: var(--cor-primaria);
+    padding: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 5%;
+    border-radius: 20px;
+}
+
+.header-navegacao * {
+    font-size: 2rem;
+    margin-left: 12px;
+    color: var(--cor-segundaria);
+}
+
+.header-navegacao {
+    display: flex;
+}
+
+.header-navegacao *:hover {
+    color: var(--cor-terciaria);
+    transform: scale(0.8);
+}
+
+.header-navegacao a:nth-child(2) {
+    text-decoration: underline;
+}
+
+main {
+    background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 1%, rgba(255,236,214,1) 25%);
+}
+h1 {
+    color: var(--cor-segundaria);
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.professores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.professores__interno {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    width: 84%;
+}
+.professores__cartao {
+    border: solid 2px var(--cor-segundaria);
+    width: 28rem;
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: var(--cor-terciaria);
+    border-radius: 10px;
+}
+.professores__cartao:hover{
+    transform: scale(1.01);
+    box-shadow: 7px 7px #003576c9;
+}
+.professores__cartao__video {
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+}
+.professores__cartao__rodape {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+.professores__cartao__rodape__nome{
+    color: var(--cor-quaternaria);
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.professores__cartao__rodape__tecnologia{
+    color: var(--cor-primaria);
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 6rem;
+    background: rgb(255, 236, 214);
+    background: linear-gradient(180deg, rgba(255, 236, 214, 1) 19%, rgba(76, 185, 231, 1) 59%, rgba(31, 73, 137, 1) 100%);
+    color: var(--cor-segundaria);
+}
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
+.footer-links a{
+    color: var(--cor-segundaria);
+}
+.footer-links h2{
+    margin-bottom: 2rem;
+}
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        font-size: 0.7rem;
+    }
+
+    .logo {
+        width: 20%;
+    }
+}
+@media only print {
+    *{
+        color: black;
+    }
+    header {
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+}

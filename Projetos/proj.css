@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+body {
+    background-color: #F5DAD2;
+    height: 10vh;
+}
+.img-logo {
+    width: 20%;
+}
+
+section {
+    height: auto;
+  }
+
+.flex {
+    display: flex;
+}
+
+  .interface {
+    max-width: 3680px;
+    margin: 0 auto;
+  }
+
+  header {
+    padding: 10px 2%;
+  }
+  header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between  ;
+    font-size: 30px;
+  }
+
+  header a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+  }
+
+  header a:hover {
+    color: black;
+    transform: scaleX(1.05);
+  }
+
+  header nav ul {
+    list-style-type: none;
+  }
+  header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+  }
+
+  header .btn-contato button{
+padding: 10px 40px;
+font-size: 18px;
+font-weight: 600;
+background-color: #DBB5B5;
+border: 0;
+border-radius: 30px;
+cursor: pointer;
+  }
+
+  button a{
+    color: white;
+  }
+
+  header .btn-contato button:hover{
+    box-shadow:0px 0px 20px   rgb(255, 255, 255);
+  }
+
+
+  
+h2.titulo{
+    color: black;
+    text-align: center;
+    font-size: 40px;
+}
+h2.titulo span{
+color: #987070;
+}
+ 
+/*especialidades*/
+
+section.especialidades{
+    padding: 40px 4%;
+    }
+
+    section.especialidades .flex{
+      gap: 60px;
+    }
+    
+
+    .especialidades .especialidades-box {
+        color: black;
+        padding: 20px;
+        border-radius: 25px;
+        border: 4px solid #987070;
+        margin-top: 45px;
+    }
+
+    .especialidades .especialidades-box h3 {
+       font-size: 30px;
+       margin: 10px 0;
+    }
+
+   
+    
+    .especialidades .especialidades-box p{
+      font-size: 30px;
+      margin: 0 0 13px;
+    }
+    .especialidades-box button {
+        padding: 10px 30px;
+        font-size: 16px;
+        font-weight: 600;
+        background-color: #DBB5B5;
+        border: 0;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+    
